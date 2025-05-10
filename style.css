@@ -16,15 +16,15 @@ body {
 }
 .sidebar {
     width: 300px;
-    border-radius: 2rem; /*1 rem = 16px*/
+    border-radius: 2rem;
     background-color: black;
     margin-right: 0.5rem;
 }
 .main-content {
     background-color: #1d1c1c;
-    flex: 1; /*according to this property, baki element ko jitni space chahiye unhe dedo as per their content but baki jitni bhi space bachegi vo meri hai*/
+    flex: 1;
     border-radius: 2rem;
-    overflow: auto; /*scrollbar not always but only when needed*/
+    overflow: auto;
     padding: 0 1.5rem 0 1.5rem;
 }
 .music-player {
@@ -34,7 +34,6 @@ body {
     width: 100%;
     height: 70px;
 }
-/*navbar styling*/
 a {
     color: white;
 }
@@ -62,7 +61,6 @@ a {
     font-size: 1rem;
     margin-left: 10px;
 }
-/*library styling*/
 .library {
     background-color: #1d1c1c;
     border-radius: 1rem;
@@ -121,7 +119,6 @@ a {
         background-color: black;
         color: white;
 }
-/*main content styling*/
 .sticky-nav {
     position: sticky;
     top: 0;
@@ -151,7 +148,6 @@ a {
         display: none;
     }
 }
-/*cards styling*/
 .card {
     background-color:  #292929;
     width: 150px;
@@ -174,11 +170,9 @@ a {
     font-size: 0.75;
     opacity: 0.75;
 }
-/*Footer*/
 .footer {
     text-align: center;
 }
-/*Music player styling*/
 .music-player {
     display: flex;
     justify-content: space-between;
@@ -202,7 +196,6 @@ a {
 .icons:hover {
     opacity: 1;
 }
-/*playback bar styling*/
 .playback {
     display: flex;
     justify-content: center;
@@ -236,7 +229,6 @@ a {
     margin-top: 0.65rem;
     margin-left: 0.9rem;
 }
-/*album part*/
 .album {
     width: 25%;
     display: flex;
@@ -264,12 +256,11 @@ a {
     opacity: 0.7;
     font-size: 0.65rem;
 }
-/*Styling controls*/
 .controls {
     width: 23%;
     display: flex;
     align-items: center;
-    gap: 1rem; /* space between icons and slider */
+    gap: 1rem;
 }
 .player-cons {
     height: 1.25rem;
@@ -284,6 +275,6 @@ a {
 .volume-slider {
     width: 100px;
     height: 4px;
-    accent-color: #1db954; /* Spotify green */
+    accent-color: #1db954;
     cursor: pointer;
   }
