@@ -1,0 +1,289 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 350;
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar {
+    width: 300px;
+    border-radius: 2rem; /*1 rem = 16px*/
+    background-color: black;
+    margin-right: 0.5rem;
+}
+.main-content {
+    background-color: #1d1c1c;
+    flex: 1; /*according to this property, baki element ko jitni space chahiye unhe dedo as per their content but baki jitni bhi space bachegi vo meri hai*/
+    border-radius: 2rem;
+    overflow: auto; /*scrollbar not always but only when needed*/
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 70px;
+}
+/*navbar styling*/
+a {
+    color: white;
+}
+.nav {
+    background-color: #1d1c1c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-options {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 4px;
+}
+.nav-options:hover {
+    opacity: 1;
+}
+.nav-options i {
+    font-size: 1.25rem;
+}
+.nav-options a {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+/*library styling*/
+.library {
+    background-color: #1d1c1c;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.65rem;
+    padding: 0.5rem 0.75rem;
+}
+.lib-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-options img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.options{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.options:hover{
+    font-size: 1.25rem;
+    opacity: 1;    
+}
+.box {
+    height: 8rem;
+    background-color:  #292929;
+    border-radius: 10px;
+    margin: 0.75rem 0 0.85rem 0;
+    padding: 0.5rem 1rem;
+}
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2 {
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+.badge {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    height: 2rem;
+    width: fit-content;
+}
+.dark-badge {
+        background-color: black;
+        color: white;
+}
+/*main content styling*/
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.sticky-nav-icons img {
+   height: 1.25rem;
+   width: 1.2rem;
+}
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item {
+    margin-right: 1rem;
+}
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+/*cards styling*/
+.card {
+    background-color:  #292929;
+    width: 150px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 0.75rem;
+    margin-top: 1rem;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card img {
+    width: 100%;
+}
+.card-title {
+    font-weight: 600;
+}
+.card-info {
+    font-size: 0.75;
+    opacity: 0.75;
+}
+/*Footer*/
+.footer {
+    text-align: center;
+}
+/*Music player styling*/
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.player {
+   width: 50%;
+}
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-controls img {
+    height: 1.25rem;
+    margin-right: 2rem;
+}
+.icons {
+    opacity: 0.7;
+}
+.icons:hover {
+    opacity: 1;
+}
+/*playback bar styling*/
+.playback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 0.75rem;
+}
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;   
+    height: 1rem;
+    width: 1rem;
+    background-color: #1db954;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.currTime {
+    margin-top: 0.65rem;
+    margin-right: 0.5rem;
+}
+.totalTime {
+    margin-top: 0.65rem;
+    margin-left: 0.9rem;
+}
+/*album part*/
+.album {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.album img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.track-details {
+    display: flex;
+    flex-direction: column;
+}
+.track-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-size: 0.90rem;
+    margin-bottom: 0.40rem;
+    opacity: 1;
+}
+.track-artist {
+    opacity: 0.7;
+    font-size: 0.65rem;
+}
+/*Styling controls*/
+.controls {
+    width: 23%;
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* space between icons and slider */
+}
+.player-cons {
+    height: 1.25rem;
+    width: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    opacity: 0.7;
+}
+.player-cons:hover {
+   opacity: 1;
+}
+.volume-slider {
+    width: 100px;
+    height: 4px;
+    accent-color: #1db954; /* Spotify green */
+    cursor: pointer;
+  }
